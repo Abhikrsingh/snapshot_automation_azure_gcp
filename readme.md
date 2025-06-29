@@ -38,3 +38,8 @@ Add the following line to the crontab based on the cloud environment:
   ```bash
   30 23 * * * sh /home/apps/prod/snapshot/snapshot.sh AZURE >> /home/logs/cron/snapshotAutoCreation-`date +\%Y-\%m-\%d`.log 2>&1
 
+- **For GCP:**
+  ```bash
+  30 23 * * * sh /home/apps/prod/snapshot/snapshot.sh GCP >> /home/logs/cron/snapshotAutoCreation-`date +\%Y-\%m-\%d`.log 2>&1
+  
+
