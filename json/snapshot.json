@@ -1,0 +1,26 @@
+{
+   "AZURE": [
+                {
+                    "diskName": "nginx-boot-disk",
+                    "snapshotName": "nginx-boot-disk-snapshot",
+                    "resourceGroupSnapshot": "paid-snapshot",
+                    "snapshotType": "true",
+                    "resource_id_disk": "<resource disk url>",
+                    "tags": "Billing=snapshot type=storage environment=production",
+                    "snapshotStorageType": "Standard_LRS"
+                }
+            ],
+
+    "GCP": [
+                {
+                    "diskName": "ansible-server",
+                    "snapshotName": "ansible-server-snapshot",
+                    "sourceDiskZone": "asia-southeast1-b",
+                    "storageLocation": "asia-southeast1",
+                    "projectName": "<Project name>",
+                    "tags": "billing=snapshot"
+                }
+                    
+            ]        
+}
+
